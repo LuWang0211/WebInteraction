@@ -1,0 +1,37 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="TranslationAPI.css">
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+        </script>
+        <script src="TranslationAPI.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+        <div  class="innerElement">
+            This page tests the <strong>Google Translation API</strong> and speech synthesis in the browser.
+        </div>
+        
+        <form onsubmit="return false;">
+        
+            <div class="innerElement">
+            <input id="textInput" size=60 type="text" value="I know chance, he is realy cute.">
+        </div>
+            
+        <div class="innerElement">
+                <input type="button" onclick="myFunc()" value="Test">
+                <input type="button" onclick="speakOriginal()" value="Speak the sentence">
+                <input type="button" onclick="translateAndSpeak()" value="Translate and speak">
+        </div>
+        </form>
+
+        <ul id="apiResult">
+
+        </ul>
+        
+        </div>
+    </body>
+</html>
