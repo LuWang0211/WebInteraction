@@ -1,0 +1,60 @@
+<html>
+  <head>
+      <script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"> </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+      <script src="InteractwithDatabase.js"></script>
+      <link rel="stylesheet" type="text/css" href="InteractwithDatabase.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  </head>
+
+  <body onload="robotInitialize()">
+<!-- JavaScript speechSynthesis.speak() without user activation is no longer allowed since M71    -->
+<!-- using this modeal as speak trigger   -->
+    <div id="myConfirm" class="modal">
+      <div id="myConfirmWrapper">
+        <p>I have something to say, can I?</p>
+        <button href="#" onclick="modalClose()">Sure!</button>
+      </div>
+    </div>
+    
+    <div class="container">
+      <h1> Hello there!</h1>    
+      <canvas id="myCanvas" width="400" height="300"></canvas>
+
+      <div class="chat">
+        <div id="dialog_area">
+            <div class="bubbledark" id="robotReply">No Data</div>
+        </div>
+        
+      </div>
+    
+    </div>
+    
+    <div class="wrapper">
+    <!--The canvas for displaying images captured from the camera-->
+      <div  class="innerElement">
+       This canvas captures an image from the webcam and stores it on <strong>Firebase</strong>.<br>
+       It displays face detections received from Firebase(placed there through <a href="https://colab.research.google.com/drive/1xWvPbSe3qqm4uwFFJ4NG7340c9BCYRIV?authuser=1#scrollTo=ihrYFrYvxPx1">a Python script that processes the image</a>).
+      </div>
+      <canvas id="mainCanvas" height=240 width=320></canvas>
+        
+<!--Button to start & end video stream -->
+      <tb>
+      <button type="button" onclick="startVideo()">Start video</button>
+
+      <button type="button" onclick="endVideo()">End video</button>
+      </tb>
+    
+      <!--The video element for capturing images from the camera -->
+     <video id="myVideo" width="320" height="240" autoplay="true" hidden> </video>
+      
+      <div class="bubbledark" id="imgdetection">If you would like I can see you, please click "start video" button</div>
+    </div>
+
+  </body>
+
+</html>

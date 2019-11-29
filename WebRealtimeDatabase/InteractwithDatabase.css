@@ -1,0 +1,92 @@
+* {
+  margin: 0px;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+#myCanvas{
+  border: 1px white solid;
+  background-color: #ccc;
+  margin-bottom: 50px;
+  width: 400px
+}
+
+div.container {
+  border: 2px black solid;
+  background-color: #AAA;
+  text-align: center;
+  width: 600px;
+  height: 400px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+    justify-items: normal;
+    align-items: center;
+}
+
+div.chat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 50%;
+  width: 100%;
+}
+
+#dialog_area {
+  /* display: flex; */
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  font-family: monospace;
+  margin-left: -2em;
+}
+
+div.bubbledark {
+  margin: 5px;
+  position: left;
+  text-align: left;
+  line-height: 50px;
+  background-color: gainsboro;
+  border-radius: 58px;
+  box-shadow: 2px 2px 4px #888;
+}
+
+.bubbledark {
+  padding-left: 1em;
+  padding-right: 1em;
+/*   width: 100%; */
+  font-size: 16px;
+}
+
+div.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  margin: 100px;
+  font-size: 16px;
+}
+
+#mainCanvas {
+  margin: 5px;
+/*   border: 2px gray solid; */
+}
+  
+#myConfirmWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: x-large;
+}
+
+#myConfirmWrapper button {
+  width: 32%;
+  height: 30px;
+  font-size: large;
+  margin: 0.3em;
+  padding: 0.2em;
+}

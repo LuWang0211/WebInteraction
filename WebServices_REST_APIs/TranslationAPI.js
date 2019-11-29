@@ -6,14 +6,52 @@ const targetLang = 'fr';
 function translateAndSpeak() {
   const baseUrl = "https://translation.googleapis.com/language/translate/v2"
   /*TODO: If you have set up a Google account, change this to your own API key*/
-  const APIKey = "";
+  const APIKey = "AIzaSyDGuxJZBznpvtd3An58kDqmOvg6hWbknlU";
   
   /*TODO: Create the request here and use the helper function "ajaxRequest" (see below) to send the web service request using the "POST" method. Set the handlerFunction parameter to handleTranslationResponse and implement that function below*/
+  
 
   /*TODO: remove the following line*/
   console.log("Handler for this button not implemented yet.");
 
 }
+
+// function translateAndSpeak() {
+//   const baseUrl = "https://translation.googleapis.com/language/translate/v2"
+//   /*TODO: If you have set up a Google account, change this to your own API key*/
+//   const APIKey = "AIzaSyDGuxJZBznpvtd3An58kDqmOvg6hWbknlU";
+  
+//   var request = {
+//     requests: [
+//       {
+//         "data": {
+//           "translations": [
+//             {
+//               "translatedText": "Hallo Welt",
+//               "detectedSourceLanguage": "en"
+//             },
+//             {
+//               "translatedText": "Mein Name ist Jeff",
+//               "detectedSourceLanguage": "en"
+//             }
+//           ]
+//         }
+//       }
+//     ]
+//   };
+
+//   /*TODO: Create the request here and use the helper function "ajaxRequest" (see below) to send the web service request using the "POST" method. Set the handlerFunction parameter to handleTranslationResponse and implement that function below*/
+//   $.post({
+//     url: 'https://translation.googleapis.com/language/translate/v2/key=AIzaSyDGuxJZBznpvtd3An58kDqmOvg6hWbknlU',
+//     data: JSON.stringify(request),
+//     dataType: 'json',
+//     contentType: 'application/json'
+//     })
+//     .then((result) => {
+//         console.log(result);
+//     });
+  
+// }
 
 /*Function that handles the response from the web service request*/
 /*TODO: Implement the following function to handle the response from the Google Translation API web sevice. See documentation for the format of the response. Your function should make the browser speak the response in the target language. You can use the speak function that is already implemented.*/
@@ -132,7 +170,7 @@ function myFunc() {
       };
       
     $.post({
-        url: 'https://vision.googleapis.com/v1/images:annotate?key=',
+        url: 'https://vision.googleapis.com/v1/images:annotate?key=AIzaSyBttL3_rUfMaP8vZQazT8bCd5XhHkmR4lA',
         data: JSON.stringify(request),
         dataType: 'json',
         contentType: 'application/json'

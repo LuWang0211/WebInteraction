@@ -1,0 +1,25 @@
+<html> 
+  <head>
+    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+    <link rel="stylesheet" type="text/css" href="RobotControlUI.css">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    </script>
+    <script src="RobotControlUI.js"></script>
+
+ </head>
+ 
+ <body onload="initializeControlUI();">
+     <div class="wrapper">
+       <h1> Robot Control UI </h1>
+       
+       <div id="main">
+         
+       <input type="text" id="speakText">
+       <input type="button" id="speakButton" value="Speak" onclick="handleButtonClick()">
+       </div>
+     </div>
+ </body>
+</html> 
